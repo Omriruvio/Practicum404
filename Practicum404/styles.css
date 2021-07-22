@@ -1,12 +1,15 @@
 
-body, h1, h2, h3, h4, p, a {
+html, body, h1, h2, h3, h4, p, a {
   margin: 0;
   font-size: 100%;
   font-weight: normal;
+  height: 100%;
 }
 body {
   color: #2f80ed;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -53,10 +56,15 @@ footer {
   line-height: 18px;
   font-weight: normal;
   color: #2f80ed;
-  position: fixed;
-  bottom:30px;
-  width: 100%;
-  text-align:center;
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 30px;
+
+  /*position: fixed;*/
+  /*bottom:30px;*/
+  /*width: 100%;*/
+  /*text-align:center;*/
 
 }
 /* testing other options
